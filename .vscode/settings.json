@@ -1,3 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "http://127.0.0.1:5500/home.html?#"
+    "liveServer.settings.root": "/",
+    "liveServer.settings.port": 5500,
+    "livePreview.defaultPreviewPath": "/home.html"
 }
