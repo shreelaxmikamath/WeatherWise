@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        #loading-container {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            position: relative; /* For absolute positioning of the text */
+        }
+        #loading-image {
+            width: 100%; /* Cover the container's width */
+            height: 100%; /* Cover the container's height */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            position: absolute; /* Position the image absolutely */
+            top: 0;
+            left: 0;
+        }
+        #loading-text {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%); /* Center text horizontally */
+            color: black;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-container">
+        <img id="loading-image" src="../Images/icons/loading.gif" alt="Loading...">
+        <p id="loading-text">Loading, please wait...</p>
+    </div>
+</body>
+</html>

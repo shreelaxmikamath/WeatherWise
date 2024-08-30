@@ -1,0 +1,477 @@
+/*home.html*/
+body{
+    height:529px;
+    width:10rem;
+}
+#NAVBAR{
+    position: relative;
+    left: 17.5rem;
+    width: 60rem;
+    height:4rem;
+    
+}
+
+
+.btn-outline-success{
+    position: relative;
+    bottom: .9rem;
+    left: 24rem;
+}
+.middlebtn{
+    position: relative;
+    top: 1.5rem;
+    width:20rem ;
+    left:2rem;
+}
+#SIDEBAR{
+    position: relative;
+    bottom: 6rem;
+    
+}
+.sidetext{
+    font-size:large;
+}
+.side{
+    background-color: #000000;
+    height: 41.5rem;
+    
+}
+.row{
+    height: 1rem;
+}
+.row1{
+    position: relative;
+    bottom: 12rem;
+    left:20rem;
+    height: .7rem;
+}
+.row2{
+    position: relative;
+    bottom: 5rem;
+    left:20rem;
+    height: 1rem;
+}
+.row3{
+    position: relative;
+    bottom: 20rem;
+    left:21rem;
+    height: 1rem;
+    width:30rem;
+}
+.bodycard{
+    border-radius: .4rem;
+    color: black;
+}
+.temp1{
+text-align: center;
+position: relative;
+top:7rem;
+font-weight: bolder;
+font-size: xxx-large;
+}
+.temp2{
+    position: relative;
+    left:4rem;
+    top:7rem;
+    font-weight: bold;
+    font-size: large;
+    width: 3rem;
+}
+.temp3{
+    position: relative;
+    left:9rem;
+    top:1.8rem;
+    font-weight: bold;
+    font-size: large;
+    width: 3rem;
+}
+.temp4{
+    position: relative;
+    left:7.5rem;
+    top:4rem;
+    font-weight: bolder;
+    width: 2rem;
+}
+.city{
+    padding-bottom: 2rem;
+    color:white;
+}
+.day, .time{
+    color: grey;
+}
+.p1{
+    position: relative;
+    bottom: .5rem;
+}
+.p2{
+    position: relative;
+    bottom: 2.2rem;
+    left:10rem;
+}
+#HOME{
+    position: relative;
+    bottom: 13rem;
+    height: 0rem;
+    width: 64rem;
+}
+
+
+#CARD{
+    position: relative;
+    bottom: 30rem;
+    height: 0rem;
+    left:62rem;
+}
+
+
+.weatherimg{
+    position: relative;
+    bottom: 50rem;
+    z-index: -1;
+    left: 17rem;
+}
+#weather-image{
+    height: 44rem;
+    width: 68.3rem;
+}
+.homecard{
+    position: relative;
+    bottom: 11rem;
+    height: 17rem;
+}
+.cloud-icon{
+    position: relative;
+    height: 15rem;
+    width: 10rem;
+    z-index: 1;
+    left: 4rem;
+    top:1rem;
+}
+.tempcard{
+    border-radius: .5rem;
+   background-color: #000000;
+   color:white;
+}
+
+
+/*forecast.html*/
+#TODAYSFORECAST{
+    position: relative;
+    bottom: 38rem;
+    left:20rem;
+    height: 10rem;
+}
+.cards{
+    width: 2rem;
+    height: 17rem;
+    background-color: #000000;
+    color: white;
+}
+.card2{
+    position: relative;
+    bottom: 17.1rem;
+left: 20rem;
+}
+.card3{
+    bottom: 16.1rem;
+}
+.card4{
+    bottom: 33.1rem;
+    left: 20rem;
+}
+
+#DAYSFORECAST{
+    position: relative;
+    bottom: 48rem;
+    left:62rem;
+}
+.card5{
+    font-weight: bold;
+    border-radius: 2rem;
+    border-width: .5rem;
+    border-color: #000000;
+}
+
+.citypos{
+    position: relative;
+    bottom: 20rem;
+    right: 2rem;
+}
+.days{
+    position: relative;
+    top:5.3rem;
+    left:2rem;
+    border-radius: 1rem;
+}
+.time1, .time2, .time3, .time4{
+    position: relative;
+    left:9rem;
+    top:3.6rem;
+    
+}
+
+.temps1, .temps2, .temps3, .temps4{
+    position: relative;
+    top:3rem;
+    left:5rem;
+    font-size: 1.3rem;
+}
+.feels_like1, .feels_like2, .feels_like3, .feels_like4{
+    position: relative;
+    left:8rem;
+    top:.8rem;
+    font-size: 1rem;
+}
+
+.wind1, .wind2, .wind3, .wind4{
+    position: relative;
+    bottom:.6rem;
+    left:3.5rem;
+}
+.bi-cloud-rain{
+    position: relative;
+    bottom: 3.1rem;
+left: 9rem;
+}
+.clouds1, .clouds2, .clouds3, .clouds4{
+    position: relative;
+    bottom: 4.5rem;
+    left:10.5rem;
+}
+.description1, .description2, .description3, .description4{
+    position: relative;
+    bottom: 5.5rem;
+    left:5.5rem
+}
+.desc1, .desc2, .desc3, .desc4, .desc5, .desc6, .desc7{
+    position: relative;
+    bottom:4.5rem;
+    left: 5rem;
+    width:7rem;
+}
+.bi-brightness-high{
+    position: relative;
+    bottom: 2.5rem;
+    left:3rem;
+}
+
+.forecasttemp1, .forecasttemp2, .forecasttemp3, .forecasttemp4, .forecasttemp5, .forecasttemp6, .forecasttemp7{
+    position: relative;
+    left:12rem;
+    bottom: 7rem;
+    width:3rem;
+}
+.forefeels_like1, .forefeels_like2, .forefeels_like3, .forefeels_like4, .forefeels_like5, .forefeels_like6, .forefeels_like7{
+    position: relative;
+    bottom:9rem;
+    left: 15rem;
+    width:3rem;
+}
+.sizecard{
+    height: 4rem;
+}
+.cloud1, .cloud2, .cloud3, .cloud0{
+    height: 15rem;
+    width: 10rem;
+    position: relative;
+    left:3rem;
+    bottom: 3.5rem;
+}
+.cards1{
+    position: relative;
+    bottom: 14rem;
+}
+.cloudicon7, .cloudicon1, .cloudicon2, .cloudicon3, .cloudicon4, .cloudicon5, .cloudicon6{
+    position: relative;
+    bottom: 2.5rem;
+    left:2rem;
+}
+.bi-wind{
+    position: relative;
+    top:.8rem;
+    left:2rem;
+}
+
+/*locations.html*/
+#locationsbody{
+    background-color: #000000;
+}
+#LAYER{
+    position: relative;
+    bottom: 63rem;
+    left: 64rem;
+}
+.locationbtn{
+width: 17rem;
+margin: .2rem;
+background-color: white;
+}
+#MAP{
+    position: relative;
+    bottom: 38rem;
+    left:20rem;
+    border: 10rem;
+    width: 40rem;
+}
+.img-fluid{
+    height: 25rem;
+    width: 50rem;
+    border-radius: 2%;
+}
+
+/*Analytics*/
+#AIRPOLLU{
+    position: relative;
+    bottom: 31rem;
+    left: 25rem;
+    height: 10rem;
+}
+.analyticscard1, .analyticscard2, .analyticscard3, .analyticscard4{
+    background-color: #000000;
+    color: white;
+}
+.analyticscard1{
+    position: relative;
+    bottom: 8rem;
+    left: 15rem;
+    height: 10rem;
+}
+.analyticscard2{
+position: relative;
+bottom: 18rem;
+left:23rem;
+height: 10rem;
+}
+.analyticscard3{
+    position: relative;
+    bottom: 28rem;
+    left:31rem;
+    height: 10rem;
+}
+.analyticscard4{
+    position: relative;
+    bottom: 38rem;
+    left:39rem;
+    height: 10rem;
+    }
+
+.uv, .dust, .ozone, .pm{
+    width: 7rem;
+    position: relative;
+    top:2rem;
+}
+.text1{
+    width: 4rem;
+    position: relative;
+    top: 2rem;
+}
+.winds{
+    position: relative;
+    left: -.2rem;
+    top: -.1rem;
+}
+
+/*Settings*/
+
+#settingsbody{
+    background-color: #000000;
+}
+#OPTIONS{
+    position: relative;
+    bottom: 10rem;
+}
+.tempbtn{
+    position: relative;
+    bottom: 18rem;
+    left:30rem;
+    
+}
+.windbtn{
+    position: relative;
+    bottom: 20.4rem;
+    left: 50rem;
+}
+.dropdown-toggle{
+    width: 17rem;
+}
+.ozonebtn{
+    position: relative;
+    bottom: 10rem;
+    left: 30rem;
+}
+.pmbtn{
+    position: relative;
+    bottom: 12.4rem;
+    left: 50rem;
+}
+.btn-group{
+    background-color: white;
+}
+.selected {
+    background-color: black;
+    color: white;
+}
+
+/*gradient scroll*/
+.air-purity-container {
+    margin-top: 20px;
+    position: relative;
+    bottom:40rem;
+}
+
+.air-purity-scrollbar {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00);
+    position: relative;
+    border-radius: 10px;
+}
+
+.air-purity-scroll-thumb {
+    width: 20px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: -5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.air-purity-label {
+    text-align: center;
+    
+}
+
+
+#unitschange{
+position: relative;
+bottom: 35rem;
+left: 30rem;
+height: 10rem;
+}
+#unitschange .container {
+  background-color: black; /* Light grey background */
+  padding: 20px; /* Adds space inside the container */
+  border-radius: 8px; /* Rounded corners */
+  width: 200px; /* Limits the width of the container */
+  margin: auto; /* Centers the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+ display: inline-flexbox;
+}
+
+#saveSettings {
+  width: 100%; /* Makes the button full width */
+  margin-top: 15px; /* Adds space above the button */
+}
+.windunit{
+    position: relative;
+    bottom: 27.5rem;
+    left: 20rem;
+    height: 11rem;
+}
+.timeformatchange{
+    position: relative;
+    bottom: 26.8rem;
+    left: 20rem;
+    height: 10rem;
+}

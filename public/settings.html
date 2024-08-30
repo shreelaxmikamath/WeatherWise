@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./util.css">
+</head>
+<body id="settingbody">
+ <!--NAVBAR-->
+
+
+
+<!--SIDEBAR-->
+<section id="SIDEBAR">
+  <div class="d-flex flex-column flex-shrink-0 p-3 side" style="width: 280px;position: relative;top:4rem;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto mt-4 link-dark text-decoration-none">
+          <svg class="bi me-2" style="color: white;" width="40" height="82" xmlns="http://www.w3.org/2000/svg" width="16" height="56" class="bi me-2"fill="currentColor" class="bi bi-cloud-haze2" viewBox="0 0 16 16">
+              <path d="M8.5 3a4 4 0 0 0-3.8 2.745.5.5 0 1 1-.949-.313 5.002 5.002 0 0 1 9.654.595A3 3 0 0 1 13 12H4.5a.5.5 0 0 1 0-1H13a2 2 0 0 0 .001-4h-.026a.5.5 0 0 1-.5-.445A4 4 0 0 0 8.5 3M0 7.5A.5.5 0 0 1 .5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m2 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-2 4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        <span class="fs-4" style="color: white;">WeatherWise</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto" >
+        <li class="nav-item" >
+          <a href="../home.html?#" class="nav-link link-light mt-4 sidetext" aria-current="page" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="56" class="bi me-2"fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                </svg>
+            Home
+          </a>
+        </li>
+       
+        <li>
+          <a href="./forecast.html" class="nav-link link-light sidetext">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="56" class="bi me-2"fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                  <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                  <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                </svg>
+            Forecast
+          </a>
+        </li>
+        <li>
+          <a href="./analytics.html" class="nav-link link-light sidetext">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="56" class="bi me-2" fill="currentColor" class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                  <path d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0z"/>
+                  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
+                  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                </svg>
+            Analytics
+          </a>
+        </li>
+        <li>
+          <a href="./locations.html" class="nav-link link-light sidetext">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="56" class="bi me-2"fill="currentColor" class="bi bi-pin-map" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                  <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                </svg>
+            Map
+          </a>
+        </li>
+        <li>
+          <a href="./settings.html" class="nav-link link-light sidetext">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="56" class="bi me-2" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+            </svg>
+                Settings
+          </a>
+        </li>
+      </ul>
+     
+    </div>
+</section>
+  
+    <section id="unitschange">
+      <div class="container mt-5 tempunitschange">
+        <div class="mb-3">
+            <label for="temperatureUnit" class="form-label" style="color: white;">Temperature Unit</label>
+            <select class="form-select" id="temperatureUnit">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+        <button id="saveSettings" class="btn btn-primary">Save Settings</button>
+    </div>
+    <div class="container mt-5 humidityunit">
+      <div class="mb-3">
+      <label for="humidity-unit" class="form-label" style="color: white;">Humidity Unit:</label>
+      <select class="form-select" id="humidity-unit">
+          <option value="percentage">Percentage (%)</option>
+          <option value="absolute">Absolute (kg/m³)</option>
+      </select>
+  </div>
+  <button id="saveHumiditySettings" class="btn btn-primary">Save Settings</button>
+</div>
+<div class="container mt-5 windunit">
+  <div class="mb-3">
+      <label for="windUnit" class="form-label" style="color: white;">Wind Speed Unit</label>
+      <select class="form-select" id="windUnit">
+          <option value="m/s">Meters per Second (m/s)</option>
+          <option value="km/h">Kilometers per Hour (km/h)</option>
+          <option value="mph">Miles per Hour (mph)</option>
+      </select>
+  </div>
+  <button id="saveWindSettings" class="btn btn-primary">Save Settings</button>
+</div>
+<div class="container mt-5 timeformatchange">
+  <div class="mb-3">
+      <label for="timeFormat" class="form-label" style="color: white;">Time Format</label>
+      <select class="form-select" id="timeFormat">
+          <option value="12-hour">12-Hour</option>
+          <option value="24-hour">24-Hour</option>
+      </select>
+  </div>
+  <button id="saveTimeSettings" class="btn btn-primary">Save Settings</button>
+</div>
+
+    </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="./settings.js"></script>
+</body>
+</html>
